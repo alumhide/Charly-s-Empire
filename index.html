@@ -1,124 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yaseen Malik - Business Hub</title>
+
 <style>
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
-  color: white;
-  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #111, #1f1f1f);
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
 }
 
-.container {
-  max-width: 750px;
-  margin: auto;
-  padding: 30px 20px;
-}
-
-.glass {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  border-radius: 18px;
+.card {
+  background: white;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
   padding: 25px;
-  margin-bottom: 25px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-  animation: fadeUp 0.8s ease forwards;
-  opacity: 0;
-}
-
-.glass:nth-child(1) { animation-delay: 0.2s; }
-.glass:nth-child(2) { animation-delay: 0.4s; }
-.glass:nth-child(3) { animation-delay: 0.6s; }
-.glass:nth-child(4) { animation-delay: 0.8s; }
-
-@keyframes fadeUp {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
 h1 {
-  margin-bottom: 5px;
-  font-size: 28px;
+  margin: 10px 0 5px;
 }
 
-h2 {
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: #d4af37;
-}
-
-.tagline {
-  color: #ccc;
+.subtitle {
+  color: gray;
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.section h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
 }
 
 .button {
-  display: inline-block;
-  padding: 10px 16px;
-  margin: 6px 6px 6px 0;
-  border-radius: 30px;
+  display: block;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  transition: 0.3s ease;
   background: #d4af37;
   color: black;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(212,175,55,0.5);
-}
-
-.center {
-  text-align: center;
+  opacity: 0.85;
 }
 </style>
+</head>
 
-<div class="container">
+<body>
 
-  <!-- HERO -->
-  <div class="glass center">
-    <h1>Yaseen Malik “Raju”</h1>
-    <div class="tagline">Entrepreneur • Retail • Lifestyle • Hospitality</div>
-    <div class="tagline">Shahjahanpur, Uttar Pradesh</div>
+<div class="card">
 
-    <a class="button" href="tel:+91XXXXXXXXXX">📞 Call</a>
-    <a class="button" href="https://wa.me/91XXXXXXXXXX">💬 WhatsApp</a>
-  </div>
+<h1>Yaseen Malik “Raju”</h1>
+<div class="subtitle">Entrepreneur | Shahjahanpur, Uttar Pradesh</div>
 
-  <!-- ALIBABA TELECOM -->
-  <div class="glass">
-    <h2>Alibaba Telecom</h2>
-    <p>Smartphones • Accessories • Repairs • Recharge Services</p>
+<a class="button" href="tel:+91XXXXXXXXXX">📞 Call</a>
+<a class="button" href="https://wa.me/91XXXXXXXXXX">💬 WhatsApp</a>
 
-    <a class="button" href="tel:+91XXXXXXXXXX">Call</a>
-    <a class="button" href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
-    <a class="button" href="https://maps.google.com/?q=Alibaba+Telecom+Shahjahanpur">Directions</a>
-  </div>
+<div class="section">
+<h2>Alibaba Telecom</h2>
+Smartphones • Accessories • Repairs
+<a class="button" href="#">📍 Directions</a>
+</div>
 
-  <!-- SALON -->
-  <div class="glass">
-    <h2>Charly and Angels Salon</h2>
-    <p>Hair Styling • Grooming • Bridal • Skin Treatments</p>
+<div class="section">
+<h2>Charly and Angels Salon</h2>
+Hair Styling • Grooming • Bridal Services
+<a class="button" href="#">📍 Directions</a>
+</div>
 
-    <a class="button" href="tel:+91XXXXXXXXXX">Book Appointment</a>
-    <a class="button" href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
-    <a class="button" href="https://maps.google.com/?q=Charly+and+Angels+Salon+Shahjahanpur">Directions</a>
-  </div>
-
-  <!-- MR CHARLY RESTAURANT -->
-  <div class="glass">
-    <h2>Mr Charly Restaurant</h2>
-    <p>Lunch • Dinner • Family Dining • Takeaway • Delivery</p>
-
-    <a class="button" href="tel:+91XXXXXXXXXX">Call</a>
-    <a class="button" href="https://maps.google.com/?q=Mr+Charly+Restaurant+Shahjahanpur">Directions</a>
-    <a class="button" href="https://www.instagram.com/p/DNlEUyxBHAr/">Latest Dishes</a>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="glass center">
-    <p style="font-size:13px;color:#aaa;">Premium Business Hub • Share this link with customers</p>
-  </div>
+<div class="section">
+<h2>Mr Charly Restaurant</h2>
+Family Dining • Takeaway • Delivery
+<a class="button" href="https://www.instagram.com/p/DNlEUyxBHAr/">🍽 View Dishes</a>
+</div>
 
 </div>
+
+</body>
+</html>
